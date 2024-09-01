@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit content</title>
+    
+</head>
+<body>
+    
+    
+
+    <h2>Youre about to edit this perosn's data: <%=indiUser.email %></h2>
+
+
+    <form action="/user/<%=indiUser.id%>?_method=PATCH" method="post">
+        <br>
+
+        <textarea name="username" id="" rows="10" cols="15"><%=indiUser.username%></textarea>
+        <br>    
+        <br>
+
+        <input type="password" name="password" id="" placeholder="enter pass">
+        <br>
+        <br>
+        <button>Submit Saved changed</button>
+
+    </form>
+
+        
+
+
+
+
+
+    
+
+</body>
+</html>
