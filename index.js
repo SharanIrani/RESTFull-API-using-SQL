@@ -8,7 +8,7 @@ app.set("view engine","ejs");
 
 app.use(express.urlencoded({extended:true}));
 
-//const { faker } = require('@faker-js/faker');
+///const { faker } = require('@faker-js/faker');
 
 const mysql = require('mysql2');
 
